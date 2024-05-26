@@ -7,7 +7,8 @@ jobs:
     - uses: actions/checkout@v3
     - name: setup environment
       run: | 
-        curl -o butdr.bash https://raw.githubusercontent.com/mbrother2/butdr/master/butdr.bashbash butdr.bash --setup
-        cron_backup.bash -v
+          git clone https://github.com/mbrother2/butdr.git
+          cd butdr 
+          bash butdr.bash --setup
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@v3
