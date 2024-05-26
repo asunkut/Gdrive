@@ -5,5 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+    - name: setup environment
+      run: | 
+        curl -o butdr.bash https://raw.githubusercontent.com/mbrother2/butdr/master/butdr.bashbash butdr.bash --setup
+        cron_backup.bash -v
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@v3
