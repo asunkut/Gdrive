@@ -10,7 +10,7 @@ jobs:
           git clone https://github.com/mbrother2/butdr.git
           cd butdr
           mkdir zip; cd zip
-          wget --quiet https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/10/game_4.6.0_4.7.0_hdiff_PIM7zBX3lxGjbaNV.zip
+          wget https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/10/game_4.6.0_4.7.0_hdiff_PIM7zBX3lxGjbaNV.zip
           mv game_4.6.0_4.7.0_hdiff_PIM7zBX3lxGjbaNV.zip old.zip
           zip -r -s 1500m old.zip --out game_4.6.0_4.7.0_hdiff_PIM7zBX3lxGjbaNV.zip ; rm old.zip
     - name: Setup tmate session
