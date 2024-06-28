@@ -12,6 +12,7 @@ jobs:
           cd butdr
           mkdir zip; cd zip
           wget https://hw-pcdownload-qcloud.aki-game.net/pcstarter/prod/game/G153/1.1.0/4YLpI4sTRXwcCwfMypqr6oSMaffuFhZP/zip/Client/Content/Paks/pakchunk2-WindowsNoEditor.pak
+          split -b 1500m pakchunk2-WindowsNoEditor.pak pakchunk2-WindowsNoEditor.pak-
     
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@v3
