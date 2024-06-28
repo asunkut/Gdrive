@@ -11,5 +11,11 @@ jobs:
           git clone https://github.com/mbrother2/butdr.git
           cd butdr
           mkdir zip; cd zip
+          wget https://hw-pcdownload-qcloud.aki-game.net/pcstarter/prod/game/G153/1.1.0/4YLpI4sTRXwcCwfMypqr6oSMaffuFhZP/zip/Client/Content/Paks/pakchunk0-WindowsNoEditor.pak
+          wget https://hw-pcdownload-qcloud.aki-game.net/pcstarter/prod/game/G153/1.1.0/4YLpI4sTRXwcCwfMypqr6oSMaffuFhZP/zip/Client/Content/Paks/pakchunk1-WindowsNoEditor.pak
+          wget https://hw-pcdownload-qcloud.aki-game.net/pcstarter/prod/game/G153/1.1.0/4YLpI4sTRXwcCwfMypqr6oSMaffuFhZP/zip/Client/Content/Paks/pakchunk3-WindowsNoEditor.pak
+          wget https://hw-pcdownload-qcloud.aki-game.net/pcstarter/prod/game/G153/1.1.0/4YLpI4sTRXwcCwfMypqr6oSMaffuFhZP/zip/Client/Content/Paks/pakchunk4-WindowsNoEditor.pak
+          wget https://hw-pcdownload-qcloud.aki-game.net/pcstarter/prod/game/G153/1.1.0/4YLpI4sTRXwcCwfMypqr6oSMaffuFhZP/zip/Client/Content/Paks/pakchunk7-WindowsNoEditor.pak
+          
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@v3
